@@ -22,7 +22,7 @@ elecNPVList = []
 pyroNPVList = []
 SMRNPVList = []
 
-totalSamples = 10000
+totalSamples = 1000
 
 for i in range (1, totalSamples + 1):
     if(i == (int)(.25 * (totalSamples + 1))):
@@ -47,7 +47,7 @@ print("PYRO: ")
 diagnostic(pyroNPVList)
 
 
-numSubranges = 200
+numSubranges = 20
 
 a,b = createCumDist_FN(elecNPVList, numSubranges, "")
 c,d = createCumDist_FN(SMRNPVList, numSubranges, "")

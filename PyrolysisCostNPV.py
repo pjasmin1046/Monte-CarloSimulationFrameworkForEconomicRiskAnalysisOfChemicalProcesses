@@ -71,7 +71,7 @@ def findNPVPyro():
     # print("MV: ", marketValue)
     salvage = marketValue - (marketValue * Combined_Taxes_FN())
     # print("SV: ", salvage)
-    carbonTaxYrOne = 2 * (np.random.triangular(27, 30, 33, 1))
+    carbonTaxYrOne = 10 * (np.random.triangular(27, 30, 33, 1))
     carbonTransport = np.random.triangular(9, 10, 11, 1)
     # print(carbonTaxYrZero)
     # CO2perCoal = 2.86
@@ -125,7 +125,7 @@ def findNPVPyro():
 
         if (i == 30):
             # print(i, carbonTaxNew)
-            CTax = (carbonTaxNew  * CO2PerDay * 365)
+            CTax = (carbonTaxNew * CO2PerDay * 365)
             # HDC = (H2PerDay * 3 * 1000 * 365)
             ADC = (ammoniaPerDay * 3 * 1000 * 365)
             CTS = (carbonTransport * CO2PerDay * 365)
