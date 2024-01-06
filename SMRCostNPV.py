@@ -45,7 +45,7 @@ def findNPVSMR():
     NPV = 0
     marketValue = FCI * MV_Plant_FN()
     salvage = marketValue - (marketValue * Combined_Taxes_FN())
-    carbonTaxYrOne = 2 *(np.random.triangular(27, 30, 33, 1))
+    carbonTaxYrOne = 10 *(np.random.triangular(27, 30, 33, 1))
     carbonTransport = np.random.triangular(9, 10, 11, 1)
     # print(carbonTaxYrZero)
     CO2perCoal = 2.86
